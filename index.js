@@ -25,8 +25,9 @@ module.exports = (bot, options) => {
     setupPermissions();
 
     const messageHandler = async (rawMessageText) => {
-        const teleportRegex = /(\w{3,16}) телепортировал вас к/i;
-        const match = rawMessageText.match(teleportRegex);
+        if (!rawMessageText) return;
+        const teleportRegex = /((?:\w|[а-яА-ЯёЁ]){3,16}) телепортировал вас к/ig;
+        const match = teleportRegex.exec(rawMessageText);
 
         if (!match) {
             return;

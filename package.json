@@ -1,23 +1,27 @@
 {
-    "name": "anti-tp-keksik",
-    "version": "1.0.0",
-    "description": "Автоматически возвращает бота в безопасное место после принудительной телепортации от игроков без специальных прав.",
-    "main": "index.js",
-    "author": "blockmineJS",
-    "botpanel": {
-      "supportedHosts": [
-        "mc.mineblaze.net",
-        "mc.masedworld.net",
-        "mc.cheatmine.net",
-        "mc.dexland.org"
-      ],
-      "settings": {
-        "returnCommand": {
-          "type": "string",
-          "label": "Команда для возврата",
-          "description": "Команда, которую бот выполнит после телепортации от юзера не имеюего прав.",
-          "default": "/spawn"
-        }
+  "name": "anti-tp-keksik",
+  "version": "1.0.1",
+  "description": "Автоматически возвращает бота в безопасное место после принудительной телепортации от игроков без права admin.allowBotTeleport",
+  "main": "index.js",
+  "author": "FurnyGO",
+  "botpanel": {
+    "supportedHosts": [
+      "mc.mineblaze.net",
+      "mc.masedworld.net",
+      "mc.cheatmine.net",
+      "mc.dexland.org"
+    ],
+    "settings": {
+      "returnCommand": {
+        "type": "string",
+        "label": "Команда для возврата",
+        "description": "Команда, которую бот выполнит после телепортации от юзера не имеюего прав.",
+        "default": "/spawn"
       }
     }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/blockmineJS/anti-tp-keksik"
   }
+}
