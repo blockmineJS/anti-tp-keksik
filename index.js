@@ -32,7 +32,6 @@ module.exports = (bot, options) => {
         if (!match) {
             return;
         }
-        log(`${match[1]}`);
 
         const teleporterNickname = match[1];
 
